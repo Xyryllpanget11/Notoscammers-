@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stop Scammers</title>
+  <style>
+    body {
+  font-family: 'Arial', sans-serif;
+  background-color: #2d2d2d;
+  color: #fff;
+  margin: 0;
+  padding: 0 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+}
+
+header {
+  background-color: #1a1a1a;
+  padding: 20px;
+  border-bottom: 2px solid #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+h1 {
+  margin: 0;
+}
+
+p {
+  margin: 10px 0;
+}
+
+section {
+  margin: 20px 0;
+  padding: 20px;
+  background-color: #333;
+  border-radius: 10px;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+ul,
+ol {
+  margin: 10px 0;
+  padding-left: 20px;
+}
+
+button {
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+footer {
+  margin-top: 20px;
+  color: #888;
+}
+nav {
+  margin-top: 60px; /* Adjusted to account for the fixed header */
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  background-color: #1a1a1a;
+  border-radius: 0 0 10px 10px;
+}
+
+nav li {
+  margin: 0;
+}
+
+nav a {
+  display: block;
+  padding: 15px 20px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+nav a:hover {
+  background-color: #333;
+}
+
+main {
+  margin-top: 60px; /* Adjusted to account for the fixed header */
+}
+
+main section:first-child {
+  margin-top: 0;
+}
+
+/* Adjustments for mobile responsiveness */
+@media screen and (max-width: 768px) {
+  body {
+    padding: 0 20px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    border-radius: 0;
+  }
+
+  nav a {
+    text-align: center;
+    border-bottom: 1px solid #fff;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 24px;
+  }
+
+  p,
+  ul,
+  ol {
+    font-size: 14px;
+  }
+
+  button {
+    font-size: 14px;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Stop Scammers</h1>
+    <p>Protect yourself from scams with valuable information.</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">How Scammers Operate</a></li>
+      <li><a href="#">Prevention Tips</a></li>
+      <li><a href="#">How to Protect Yourself</a></li>
+      <li><a href="#">Report a Scam</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="scam-info">
+      <h2>How Scammers Operate</h2>
+      <p>Scammers use various tactics, such as phishing emails, fake websites, and social engineering, to trick individuals into revealing sensitive information.</p>
+    </section>
+
+    <section id="prevention-tips">
+      <h2>Prevention Tips</h2>
+      <ul>
+        <li>Be cautious with unsolicited emails or messages.</li>
+        <li>Verify the legitimacy of websites before providing personal information.</li>
+        <li>Use strong, unique passwords and enable two-factor authentication.</li>
+        <li>Beware of investment opportunities that promise high returns with low risk.</li>
+        <li>Never give out your personal information to someone you don't trust.</li>
+      </ul>
+    </section>
+
+    <section id="protect-yourself">
+      <h2>How to Protect Yourself</h2>
+      <p>Stay vigilant and follow these steps:</p>
+      <ol>
+        <li>Regularly update your software and antivirus programs.</li>
+        <li>Educate yourself on common scam tactics.</li>
+        <li>Keep personal information private and secure.</li>
+        <li>Be careful about what information you share on social media.</li>
+        <li>If you think you may have been the victim of a scam, contact your bank or credit card company immediately.</li>
+      </ol>
+    </section>
+
+    <section id="report-scam">
+      <h2>Report a Scam</h2>
+      <p>If you encounter a scam:</p>
+      <ol>
+        <li>Document details of the scam, including emails, messages,
+      </ol>
+      <p>Contact your local authorities and report the scam to relevant organizations.</p>
+      <p>Consider reporting the incident to online platforms or your bank.</p>
+      <button onclick="reportScam()">Report a Scam</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 Stop Scammers. All rights reserved. | Licensed under <a href="#">MIT License</a></p>
+  </footer>
+
+  <script>
+    function reportScam() {
+      // Open the FTC complaint page in a new window
+      window.open("https://www.ftc.gov/complaint", "_blank");
+    }
+  </script>
+</body>
+  </html>
+  
